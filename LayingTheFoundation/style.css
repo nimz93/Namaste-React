@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #179797;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+}
+.search-box input[type=text] {
+    height: 26px;
+    font-size: 17px;
+    width: 200px;
+    margin-top: 14px;
+}
+.user-icon{
+    display: flex;
+    align-items: center;
+    padding : 10px
+}
+.user-icon a > i {
+    color :white
+}
