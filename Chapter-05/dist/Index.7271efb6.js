@@ -27520,8 +27520,8 @@ const Body = ()=>{
     _s();
     const [serachKey, setSearchKey] = (0, _react.useState)("");
     const [resturants, setResturants] = (0, _react.useState)((0, _constants.RESTAURANTS));
-    const searchFun = (serachKey, resturants)=>{
-        const filteredList = resturants.filter((item)=>item.data.name.includes(serachKey));
+    const searchFun = (serachKey)=>{
+        const filteredList = (0, _constants.RESTAURANTS).filter((item)=>item.data.name.includes(serachKey));
         setResturants(filteredList);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27555,7 +27555,7 @@ const Body = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: "search-btn",
-                            onClick: ()=>searchFun(serachKey, resturants),
+                            onClick: ()=>searchFun(serachKey),
                             children: "Search"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",

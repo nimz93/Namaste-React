@@ -6,8 +6,8 @@ const Body = () => {
     const [serachKey, setSearchKey] = useState("");
     const [resturants, setResturants] = useState(RESTAURANTS);
 
-    const searchFun = (serachKey,resturants) =>{
-       const filteredList = resturants.filter( item => item.data.name.includes(serachKey) );
+    const searchFun = (serachKey) =>{
+       const filteredList = RESTAURANTS.filter( item => item.data.name.includes(serachKey) );
        setResturants(filteredList);
     }
     return (
@@ -18,7 +18,7 @@ const Body = () => {
                 onChange = { (e) => setSearchKey(e.target.value)} />
                 <button className ="reset-btn" onClick = {() => {setResturants(RESTAURANTS); setSearchKey(""); }} >Reset
                 </button>
-                <button className ="search-btn" onClick = {() => searchFun(serachKey,resturants)} >Search</button>
+                <button className ="search-btn" onClick = {() => searchFun(serachKey)} >Search</button>
             </div>
             <div className="restaurant-container">
                 {resturants && resturants.map( ( item, key) =>{
