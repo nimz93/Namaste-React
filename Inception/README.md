@@ -18,3 +18,6 @@ Emmet is built in visual studio code,
 In Vs Code, Emmet abbreviation and snippet expansions are enabled by default in html, haml, pug, slim, jsx, xml, xsl, css, scss, sass, less and stylus files, as well as any language that inherits from any of the above like handlebars and php.
 
 2. Difference between library and framework
+a. Library implements a particular function. Some examples of popular libraries are React, and JQuery.
+b. framework as a collection of libraries implementing a particular methodology. Some of the more commonly   known frameworks are Angular, Vue, Model View Controller, and Model View Presenter.
+when an application code uses a library, the developer writing the code is in charge of the application flow. This means the developer decides when to call the library. However, when we use a framework, the framework decides when to call the library. This shift in control of calling the library from the application code to the framework is an inversion of control.
