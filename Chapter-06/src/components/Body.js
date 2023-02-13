@@ -23,6 +23,8 @@ const Body = () => {
         .then((data) => {const restaurantsz = data ?.data?.cards[2]?.data?.data?.cards;
             setAllResturants(restaurantsz);
             setFilteredResturants(restaurantsz); 
+        }).catch(error => {
+            console.error('There was an error!', error);
         });
     }
 
