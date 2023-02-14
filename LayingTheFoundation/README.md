@@ -2,12 +2,11 @@
 JSX is a statically-typed, object-oriented programming language compiling to standalone JavaScript. The reason why JSX was developed is our need for a more robust programming language than JavaScript. JSX is, however, fairly close to JavaScript especially in its statements and expressions.
 
 JSX is an extension of the JavaScript language which provides a way to structure component rendering using syntax similar to HTML. JSX gives us the ability to write HTML elements in Javascript and place them in the DOM by converting the HTML tags into React elements without the need for other methods like createElement() or appendChild(). This combination of Javascript and HTML leads to having more powerful applications with boosted performance.
- eg. 
- React element with JSX
+/* eg. React element with JSX
  const myElement = <h1>I Love JSX!</h1>;
-React element without JSX
+  React element without JSX
  const myElement = React.createElement('h1', {}, 'I do not use JSX!');
-
+*/
  2. Superpowers of JSX
     1. JSX Prevents Injection Attacks
         It is safe to embed user input in JSX:
